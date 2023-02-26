@@ -22,7 +22,7 @@ function highlightCheckedOption(e){
     for (let radio of radios){
         radio.classList.remove('highlight')
     }
-       // removes all instances of the highlight class
+     
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
