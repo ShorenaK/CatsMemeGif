@@ -1,14 +1,4 @@
 import { catsData } from './data.js'
-// function getEmotionsArray(cats){
-//     const emotionArray = []
-//     for(let i = 0; i < cats.length; i ++){
-//         for(let j = 0; j < cats[i].emotionTags.length; j ++){
-//             emotionArray.push(cats[i].emotionTags[j])
-//         }
-//     }
-//     console.log(emotionArray)
-// }
-// getEmotionsArray(catsData)
 
 const emotionRadios = document.getElementById('emotion-radios')
 const getImageBtn = document.getElementById('get-image-btn')
@@ -32,7 +22,7 @@ function highlightCheckedOption(e){
     for (let radio of radios){
         radio.classList.remove('highlight')
     }
-     // remove all instances of the highlight class
+       // removes all instances of the highlight class
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
@@ -53,11 +43,6 @@ function getMatchingCatsArray(){
         return matchingCatsArray 
     }  
 }
-// for ( let character of characters){
-//     for (let power of character.powers){   
-//         console.log(power)
-//     }
-// }
 
 function getSingleCatObject(){
     const catsArray = getMatchingCatsArray()
